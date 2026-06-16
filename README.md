@@ -1,4 +1,4 @@
-# PeptX Age — Frontend-архитектура B2B E-Commerce платформы исследований
+<img width="1900" height="797" alt="image" src="https://github.com/user-attachments/assets/5fc0731d-b6f8-4d82-b37e-0388d8efe1ca" /># PeptX Age — Frontend-архитектура B2B E-Commerce платформы исследований
 
 Коммерческий проект (MVP) по проектированию и разработке многостраничной интерфейсной архитектуры для платформы по продаже высокоочищенных пептидов, нутрицевтиков и аминокислот исследовательским лабораториям и B2B-клиентам.
 
@@ -43,7 +43,17 @@
 
 ### 1. Главный экран и Сквозные компоненты (`index.html`)
 Точка входа с Hero-секцией, промо-баннерами и сквозным мультиязычным Header (RU/ENG).
-> 📥 *[МЕСТО ДЛЯ ТВОЕЙ КАРТИНКИ ГЛАВНОЙ СТРАНИЦЫ: <img src="ссылка" />]*
+
+<img width="1918" height="737" alt="image" src="https://github.com/user-attachments/assets/a2184c9c-c867-42e2-b7fb-85e1604df09a" />
+
+<img width="1900" height="881" alt="image" src="https://github.com/user-attachments/assets/3b25203c-7588-4e15-94df-aaa4355787cf" />
+
+<img width="1901" height="421" alt="image" src="https://github.com/user-attachments/assets/056d1420-ee7b-4a2c-897e-df1d10652299" />
+
+<img width="1900" height="797" alt="image" src="https://github.com/user-attachments/assets/5fd6e797-db8d-45b9-a5c2-1cde3822ee12" />
+
+<img width="1900" height="326" alt="image" src="https://github.com/user-attachments/assets/24f184a2-436e-4b4b-9c91-5cfdb428ec3d" />
+
 
 ### 2. Модуль Каталогов (`catalog.html`, `catalog_peptid.html`)
 Основная сетка товаров с фильтрацией, специализированная линейка PeptX Age Line и fallback-состояние пустого поиска (`catalog_error.html`).
