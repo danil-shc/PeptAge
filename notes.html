@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/notes.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header_inner">
+        <a class="header_log o" href="index.html">
+          <img src="images/logo.svg" alt="Логотип">
+        </a>
+
+        <nav class="header-nav">
+          <div class="header-nav__item header-nav__item--has-menu">
+            <a class="main header-nav__link" href="catalog.html">Каталог</a>
+
+            <button class="header-nav__toggle" type="button" aria-label="Открыть каталог" aria-expanded="false">
+              <i data-icon="keyboard_arrow_down" class="header-nav__icon"></i>
+            </button>
+
+            <div class="services-menu" id="catalogMenu">
+              <a class="services-item" href="catalog_peptid.html">
+                <div class="services-item__left">
+                  <i data-icon="allergy" class="services-item__icon"></i>
+
+                  <div class="services-item__texts">
+                    <div class="main services-item__title">PeptX Balance</div>
+                    <div class="services-item__subtitle additional-mini">Metabolic Research Line</div>
+                    <div class="additional-mini services-item__desc additional-mini">
+                      Лабораторные исследования механизмов метаболизма
+                    </div>
+                  </div>
+                </div>
+
+                <div class="services-item__right">
+                  <i data-icon="keyboard_arrow_right" class="services-item__arrow"></i>
+                </div>
+              </a>
+
+              <a class="services-item" href="catalog_peptid.html">
+                <div class="services-item__left">
+                  <i data-icon="psychology" class="services-item__icon"></i>
+
+                  <div class="services-item__texts">
+                    <div class="main services-item__title">PeptX Neuro</div>
+                    <div class="services-item__subtitle additional-mini">Cognitive Research Line</div>
+                    <div class="additional-mini services-item__desc additional-mini">
+                      Исследовательская платформа нейро-механизмов
+                    </div>
+                  </div>
+                </div>
+
+                <div class="services-item__right">
+                  <i data-icon="keyboard_arrow_right" class="services-item__arrow"></i>
+                </div>
+              </a>
+
+              <a class="services-item services-item--last" href="catalog_peptid.html">
+                <div class="services-item__left">
+                  <i data-icon="flowsheet" class="services-item__icon"></i>
+
+                  <div class="services-item__texts">
+                    <div class="main services-item__title">PeptX Age</div>
+                    <div class="services-item__subtitle additional-mini">Longevity Research Line</div>
+                    <div class="additional-mini services-item__desc additional-mini">
+                      Изучение процессов старения и клеточной регуляции
+                    </div>
+                  </div>
+                </div>
+
+                <div class="services-item__right">
+                  <i data-icon="keyboard_arrow_right" class="services-item__arrow"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <a class="main header-nav__link" href="notes.html">База знаний</a>
+          <a class="main header-nav__link" href="notes.html">Комьюнити</a>
+          <a class="main header-nav__link" href="info_page.html">Доставка и оплата</a>
+          <a class="main header-nav__link" href="faq.html">Вопрос-Ответ</a>
+          <a class="main header-nav__link" href="contacts.html">Контакты</a>
+        </nav>
+
+        <div class="header-tools">
+          <div class="header-tools__icons">
+            <button class="header-tools__icon" type="button" aria-label="Профиль">
+              <i data-icon="account_box"></i>
+            </button>
+            <button class="header-tools__icon" type="button" aria-label="Корзина">
+              <i data-icon="shopping_cart"></i>
+            </button>
+          </div>
+
+          <div class="lang-switch main" data-lang="RU">
+            <button class="lang-switch__btn is-active main" type="button" data-lang-btn="RU">RU</button>
+            <span class="lang-switch__sep">/</span>
+            <button class="lang-switch__btn main" type="button" data-lang-btn="ENG">ENG</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="notes">
+    <div class="container">
+      <div class="notes__inner">
+        <div class="catalog-top__head">
+          <div class="catalog-top__breadcrumbs additional-mini">
+            <a class="catalog-top__crumb" href="index.html">Главная</a>
+            <span class="catalog-top__sep">/</span>
+            <span class="catalog-top__crumb">База знаний</span>
+          </div>
+          <h1 class="catalog-top__title h2">База знаний</h1>
+          <div class="catalog-search">
+            <i data-icon="search" class="catalog-search__icon" aria-hidden="true"></i>
+            <span class="catalog-search__placeholder main">Введите ключевое слово</span>
+          </div>
+        </div>
+
+        <div class="notes__grid">
+
+          <div class="notes__row">
+            <article class="note-card">
+              <div class="note-card__media">
+                <img class="note-card__img" src="images/note_1.webp" alt="">
+                <span class="note-card__date additional-mini">06.12.2025г.</span>
+              </div>
+
+              <div class="note-card__content">
+                <div class="note-card_text">
+                  <h3 class="note-card__title h3">Нутрицевтики укрепляют ваше здоровье</h3>
+
+                  <p class="note-card__text main">
+                    Вы хотите повысить свою энергию, поддержать иммунитет и выглядеть моложе? Тогда обратите внимание на
+                    уникальные
+                    свойства нутрицевтиков!
+                  </p>
+                </div>
+                <a class="note-card__btn main" href="notes_fail.html">
+                  <span>Читать</span>
+                  <i data-icon="arrow_forward" class="note-card__btn-icon" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="note-card">
+              <div class="note-card__media">
+                <img class="note-card__img" src="images/note_2.webp" alt="">
+                <span class="note-card__date additional-mini">06.12.2025г.</span>
+              </div>
+
+              <div class="note-card__content">
+                <div class="note-card_text">
+                  <h3 class="note-card__title h3">Ключевые преимущества употребления пептидов и аминокислот</h3>
+
+                  <p class="note-card__text main">
+                    Пептиды и аминокислоты играют важную роль в поддержании здоровья организма. Они участвуют в
+                    различных
+                    физиологических процессах, включая синтез белков, поддержание иммунной системы, рост мышц и защиту
+                    клеток от окислительного стресса. Настоящая статья рассматривает ключевые преимущества употребления
+                    пептидов и аминокислот
+                  </p>
+                </div>
+
+                <a class="note-card__btn main" href="notes_fail.html">
+                  <span>Читать</span>
+                  <i data-icon="arrow_forward" class="note-card__btn-icon" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="notes__row">
+            <article class="note-card">
+              <div class="note-card__media">
+                <img class="note-card__img" src="images/note_3.webp" alt="">
+                <span class="note-card__date additional-mini">06.12.2025г.</span>
+              </div>
+
+              <div class="note-card__content">
+                <div class="note-card_text">
+                  <h3 class="note-card__title h3">Нутрицевтики укрепляют ваше здоровье</h3>
+
+                  <p class="note-card__text main">
+                    Вы хотите повысить свою энергию, поддержать иммунитет и выглядеть моложе? Тогда обратите внимание на
+                    уникальные
+                    свойства нутрицевтиков!
+                  </p>
+                </div>
+                <a class="note-card__btn main" href="notes_fail.html">
+                  <span>Читать</span>
+                  <i data-icon="arrow_forward" class="note-card__btn-icon" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="note-card">
+              <div class="note-card__media">
+                <img class="note-card__img" src="images/note_4.webp" alt="">
+                <span class="note-card__date additional-mini">06.12.2025г.</span>
+              </div>
+
+              <div class="note-card__content">
+                <div class="note-card_text">
+                  <h3 class="note-card__title h3">Ключевые преимущества употребления пептидов и аминокислот</h3>
+
+                  <p class="note-card__text main">
+                    Пептиды и аминокислоты играют важную роль в поддержании здоровья организма. Они участвуют в
+                    различных
+                    физиологических процессах, включая синтез белков, поддержание иммунной системы, рост мышц и защиту
+                    клеток от окислительного стресса. Настоящая статья рассматривает ключевые преимущества употребления
+                    пептидов и аминокислот
+                  </p>
+                </div>
+
+                <a class="note-card__btn main" href="notes_fail.html">
+                  <span>Читать</span>
+                  <i data-icon="arrow_forward" class="note-card__btn-icon" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="notes__row">
+            <article class="note-card">
+              <div class="note-card__media">
+                <img class="note-card__img" src="images/note_5.webp" alt="">
+                <span class="note-card__date additional-mini">06.12.2025г.</span>
+              </div>
+
+              <div class="note-card__content">
+                <div class="note-card_text">
+                  <h3 class="note-card__title h3">Нутрицевтики укрепляют ваше здоровье</h3>
+
+                  <p class="note-card__text main">
+                    Вы хотите повысить свою энергию, поддержать иммунитет и выглядеть моложе? Тогда обратите внимание на
+                    уникальные
+                    свойства нутрицевтиков!
+                  </p>
+                </div>
+                <a class="note-card__btn main" href="notes_fail.html">
+                  <span>Читать</span>
+                  <i data-icon="arrow_forward" class="note-card__btn-icon" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="note-card">
+              <div class="note-card__media">
+                <img class="note-card__img" src="images/note_6.webp" alt="">
+                <span class="note-card__date additional-mini">06.12.2025г.</span>
+              </div>
+
+              <div class="note-card__content">
+                <div class="note-card_text">
+                  <h3 class="note-card__title h3">Ключевые преимущества употребления пептидов и аминокислот</h3>
+
+                  <p class="note-card__text main">
+                    Пептиды и аминокислоты играют важную роль в поддержании здоровья организма. Они участвуют в
+                    различных
+                    физиологических процессах, включая синтез белков, поддержание иммунной системы, рост мышц и защиту
+                    клеток от окислительного стресса. Настоящая статья рассматривает ключевые преимущества употребления
+                    пептидов и аминокислот
+                  </p>
+                </div>
+
+                <a class="note-card__btn main" href="notes_fail.html">
+                  <span>Читать</span>
+                  <i data-icon="arrow_forward" class="note-card__btn-icon" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+        <button class="show-more-btn">
+          <span class="main">Показать еще</span>
+          <i data-icon="arrow_outward" class="show-more-btn__icon" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__col footer__col-logo">
+            <a class="footer__logo" href="index.html">
+              <img src="images/footer_logo.svg" alt="PeptX">
+            </a>
+            <div class="footer__title-logo h3">Сертификаты соответствия</div>
+            <div class="footer__text main">
+              <a class="main" href="#">№РОСС RU.NTC1.001778/25</a>
+              <a class="main" href="#">№РОСС RU.NTC1.001778/25</a>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__title h3">Каталог</div>
+            <nav class="footer__list">
+              <a class="main" href="catalog_peptid.html">Пептиды</a>
+              <a class="main" href="catalog.html">Нутрицевтики</a>
+              <a class="main" href="catalog.html">Косметика</a>
+              <a class="main" href="catalog.html">Дополнительно</a>
+            </nav>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__title h3">Информация</div>
+            <nav class="footer__list">
+              <a class="main" href="notes.html">База знаний</a>
+              <a class="main" href="notes.html">Комьюнити</a>
+              <a class="main" href="contacts.html">Контакты</a>
+              <a class="main" href="info_page.html">Доставка и оплата</a>
+              <a class="main" href="faq.html">Вопрос-ответ</a>
+              <a class="main" href="#">Сертификаты</a>
+            </nav>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__title-contacts h3">Контакты</div>
+
+            <div class="footer__contacts">
+              <a class="footer__link main" href="tel:+7564543">+7 7564543</a>
+              <a class="footer__link main" href="mailto:info@peptage.ru">info@peptage.ru</a>
+
+              <div class="footer__socials">
+                <a href="#" aria-label="Telegram">
+                  <img src="images/telega.svg" alt="">
+                </a>
+                <a href="#" aria-label="WhatsApp">
+                  <img src="images/whatsapp.svg" alt="">
+                </a>
+              </div>
+
+              <div class="footer__text main">
+                <a class="main" href="#">ООО “PeptAge”</a>
+                <a class="main" href="#">ИНН: 1111111111</a>
+                <a class="main" href="#">ОГРН:11111111111111111111</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__pay">
+            <img src="images/mir.svg" alt="Мир">
+            <img src="images/sbp.svg" alt="СБП">
+          </div>
+          <a class="footer__policy additional" href="#">Политика конфиденциальности</a>
+          <div class="footer__copy additional">2025. Все права защищены</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

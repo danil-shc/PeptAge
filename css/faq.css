@@ -1,0 +1,132 @@
+.catalog-top__title{
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+html{ overflow-y: scroll; }
+
+.faq__list{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.faq-item__head{
+  width:1180px;
+  border:0;
+  padding:8px 32px;
+  background: var(--white);
+  box-sizing:border-box;
+  cursor:pointer;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.faq-item__q{
+  color: var(--blue);
+  text-align:left;
+}
+
+/* иконка: в закрытом состоянии — стрелка, в открытом — крест */
+.faq-item__icon{
+  width:34px;
+  height:34px;
+  flex:0 0 auto;
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* стрелка вниз (закрыто) */
+.faq-item__icon::before{
+  content:"";
+  width:10px;
+  height:10px;
+  border-right:2px solid var(--blue);
+  border-bottom:2px solid var(--blue);
+  transform: rotate(45deg);
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+/* открыто: прячем стрелку */
+.faq-item.is-open .faq-item__icon::before{
+  opacity:0;
+}
+
+/* крестик (открыто) */
+.faq-item.is-open .faq-item__icon::after,
+.faq-item.is-open .faq-item__icon span{
+  content:"";
+}
+
+.faq-item.is-open .faq-item__icon::after{
+  content:"";
+  position:absolute;
+  width:20px;
+  height:2px;
+  background: var(--blue);
+  border-radius:2px;
+  transform: rotate(45deg);
+}
+
+.faq-item.is-open .faq-item__icon::marker{ content:none; }
+
+.faq-item.is-open .faq-item__icon{
+  /* второй штрих креста */
+}
+
+.faq-item.is-open .faq-item__icon{
+  /* рисуем второй штрих через дополнительный псевдоэлемент */
+}
+
+.faq-item.is-open .faq-item__icon::before{
+  /* переиспользуем ::before как второй штрих креста */
+  opacity:1;
+  width:20px;
+  height:2px;
+  border:0;
+  background: var(--blue);
+  border-radius:2px;
+  transform: rotate(-45deg);
+}
+
+/* тело */
+.faq-item__wrap{
+  display:grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .25s ease;
+}
+
+.faq-item.is-open .faq-item__wrap{
+  grid-template-rows: 1fr;
+}
+
+.faq-item__body{
+  width:1180px;
+  padding:10px 32px 16px;
+  background: var(--white);
+  box-sizing:border-box;
+
+  overflow:hidden;
+  opacity:0;
+  transition: opacity .2s ease;
+}
+
+.faq-item.is-open .faq-item__body{
+  opacity:1;
+}
+
+.faq-item__a{
+  margin:0;
+  color: var(--black);
+}
+
+.faq-item__line{
+  width:1180px;
+  height:0;
+  border-top:1px solid var(--transparent-blue);
+  margin-top:16px;
+}

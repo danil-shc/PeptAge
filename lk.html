@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/lk.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header_inner">
+        <a class="header_log o" href="index.html">
+          <img src="images/logo.svg" alt="Логотип">
+        </a>
+
+        <nav class="header-nav">
+          <div class="header-nav__item header-nav__item--has-menu">
+            <a class="main header-nav__link" href="catalog.html">Каталог</a>
+
+            <button class="header-nav__toggle" type="button" aria-label="Открыть каталог" aria-expanded="false">
+              <i data-icon="keyboard_arrow_down" class="header-nav__icon"></i>
+            </button>
+
+            <div class="services-menu" id="catalogMenu">
+              <a class="services-item" href="catalog_peptid.html">
+                <div class="services-item__left">
+                  <i data-icon="allergy" class="services-item__icon"></i>
+
+                  <div class="services-item__texts">
+                    <div class="main services-item__title">PeptX Balance</div>
+                    <div class="services-item__subtitle additional-mini">Metabolic Research Line</div>
+                    <div class="additional-mini services-item__desc additional-mini">
+                      Лабораторные исследования механизмов метаболизма
+                    </div>
+                  </div>
+                </div>
+
+                <div class="services-item__right">
+                  <i data-icon="keyboard_arrow_right" class="services-item__arrow"></i>
+                </div>
+              </a>
+
+              <a class="services-item" href="catalog_peptid.html">
+                <div class="services-item__left">
+                  <i data-icon="psychology" class="services-item__icon"></i>
+
+                  <div class="services-item__texts">
+                    <div class="main services-item__title">PeptX Neuro</div>
+                    <div class="services-item__subtitle additional-mini">Cognitive Research Line</div>
+                    <div class="additional-mini services-item__desc additional-mini">
+                      Исследовательская платформа нейро-механизмов
+                    </div>
+                  </div>
+                </div>
+
+                <div class="services-item__right">
+                  <i data-icon="keyboard_arrow_right" class="services-item__arrow"></i>
+                </div>
+              </a>
+
+              <a class="services-item services-item--last" href="catalog_peptid.html">
+                <div class="services-item__left">
+                  <i data-icon="flowsheet" class="services-item__icon"></i>
+
+                  <div class="services-item__texts">
+                    <div class="main services-item__title">PeptX Age</div>
+                    <div class="services-item__subtitle additional-mini">Longevity Research Line</div>
+                    <div class="additional-mini services-item__desc additional-mini">
+                      Изучение процессов старения и клеточной регуляции
+                    </div>
+                  </div>
+                </div>
+
+                <div class="services-item__right">
+                  <i data-icon="keyboard_arrow_right" class="services-item__arrow"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <a class="main header-nav__link" href="notes.html">База знаний</a>
+          <a class="main header-nav__link" href="notes.html">Комьюнити</a>
+          <a class="main header-nav__link" href="info_page.html">Доставка и оплата</a>
+          <a class="main header-nav__link" href="faq.html">Вопрос-Ответ</a>
+          <a class="main header-nav__link" href="contacts.html">Контакты</a>
+        </nav>
+
+        <div class="header-tools">
+          <div class="header-tools__icons">
+            <button class="header-tools__icon" type="button" aria-label="Профиль">
+              <i data-icon="account_box"></i>
+            </button>
+            <button class="header-tools__icon" type="button" aria-label="Корзина">
+              <i data-icon="shopping_cart"></i>
+            </button>
+          </div>
+
+          <div class="lang-switch main" data-lang="RU">
+            <button class="lang-switch__btn is-active main" type="button" data-lang-btn="RU">RU</button>
+            <span class="lang-switch__sep">/</span>
+            <button class="lang-switch__btn main" type="button" data-lang-btn="ENG">ENG</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="lk">
+    <div class="container">
+      <div class="lk__container">
+
+        <div class="catalog-top__head">
+          <div class="catalog-top__breadcrumbs additional-mini">
+            <a class="catalog-top__crumb" href="index.html">Главная</a>
+            <span class="catalog-top__sep">/</span>
+            <span class="catalog-top__crumb">Личный кабинет</span>
+          </div>
+          <h1 class="catalog-top__title h2">Личный кабинет</h1>
+        </div>
+        <div class="lk__inner">
+
+          <aside class="lk-side">
+            <div class="lk-profile">
+              <div class="lk-profile__top">
+                <div class="lk-profile__avatar">
+                  <span class="h2 lk-profile__letter">Г</span>
+                </div>
+
+                <div class="lk-profile__info">
+                  <div class="h3 lk-profile__name">Георгий В.</div>
+                  <div class="additional-mini lk-profile__sub">Настройки профиля</div>
+                </div>
+              </div>
+
+              <nav class="lk-nav">
+                <a class="lk-nav__item" href="lk.html">
+                  <i data-icon="widgets" class="lk-nav__icon" aria-hidden="true"></i>
+                  <span class="main lk-nav__text">Главная</span>
+                </a>
+
+                <a class="lk-nav__item" href="order.html">
+                  <i data-icon="shopping_cart" class="lk-nav__icon" aria-hidden="true"></i>
+                  <span class="main lk-nav__text">Заказы</span>
+                </a>
+
+                <a class="lk-nav__item" href="lk.html">
+                  <i data-icon="list_alt" class="lk-nav__icon" aria-hidden="true"></i>
+                  <span class="main lk-nav__text">Личные данные</span>
+                </a>
+
+                <a class="lk-nav__item" href="login.html">
+                  <i data-icon="keyboard_arrow_left" class="lk-nav__icon" aria-hidden="true"></i>
+                  <span class="main lk-nav__text">Выход</span>
+                </a>
+              </nav>
+            </div>
+          </aside>
+
+          <div class="lk-content">
+
+            <div class="lk-top">
+              <article class="order-card order-card--unpaid">
+                <div class="order-card__head">
+                  <div class="order-card__head-left">
+                    <span class="main order-card__date">17.12.25</span>
+
+                    <div class="order-card__num">
+                      <span class="main order-card__num-label">Заказ:</span>
+                      <span class="h3 order-card__num-value">IPGF8687SC</span>
+                    </div>
+                  </div>
+
+                  <span class="h3 order-card__status order-card__status--red">Не оплачено</span>
+                </div>
+
+                <div class="order-card__items">
+                  <article class="order-item">
+                    <div class="order-item__main">
+                      <img class="order-item__img" src="images/pept_4.webp" alt="">
+                      <div class="order-item__text">
+                        <div class="main order-item__title">Klotho / Follistatin<br>Female Bundle</div>
+                        <div class="order-item__sku">
+                          <span class="additional-mini order-item__sku-label">Артикул:</span>
+                          <span class="additional-mini order-item__sku-value">OCB3637-73478HDLK</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="order-item__meta">
+                      <span class="additional order-item__price">5000Р</span>
+
+                      <div class="order-qty">
+                        <button class="order-qty__btn" type="button">-</button>
+                        <span class="additional order-qty__value">1</span>
+                        <button class="order-qty__btn" type="button">+</button>
+                      </div>
+
+                      <span class="additional order-item__sum">5000Р</span>
+
+                      <button class="order-item__remove" type="button" aria-label="Удалить">
+                        <i data-icon="close" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </article>
+
+                  <article class="order-item">
+                    <div class="order-item__main">
+                      <img class="order-item__img" src="images/pept_3.webp" alt="">
+                      <div class="order-item__text">
+                        <div class="main order-item__title">Klotho / Follistatin<br>Female Bundle</div>
+                        <div class="order-item__sku">
+                          <span class="additional-mini order-item__sku-label">Артикул:</span>
+                          <span class="additional-mini order-item__sku-value">OCB3637-73478HDLK</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="order-item__meta">
+                      <span class="additional order-item__price">775000Р</span>
+
+                      <div class="order-qty">
+                        <button class="order-qty__btn" type="button">-</button>
+                        <span class="additional order-qty__value">6</span>
+                        <button class="order-qty__btn" type="button">+</button>
+                      </div>
+
+                      <span class="additional order-item__sum">775000Р</span>
+
+                      <button class="order-item__remove" type="button" aria-label="Удалить">
+                        <i data-icon="close" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </article>
+                </div>
+
+                <button class="order-card__btn main" type="button">
+                  <span>Оформить</span>
+                  <i data-icon="arrow_outward" class="order-card__btn-icon" aria-hidden="true"></i>
+                </button>
+              </article>
+
+              <article class="order-card order-card--paid">
+                <div class="order-card__head">
+                  <div class="order-card__head-left">
+                    <span class="main order-card__date">16.12.25</span>
+
+                    <div class="order-card__num">
+                      <span class="main order-card__num-label">Заказ:</span>
+                      <span class="h3 order-card__num-value">UY478JB87SC</span>
+                    </div>
+                  </div>
+
+                  <span class="h3 order-card__status order-card__status--black">Оплачено</span>
+                </div>
+
+                <div class="order-card__items">
+                  <article class="order-item">
+                    <div class="order-item__main">
+                      <img class="order-item__img" src="images/pept_2.webp" alt="">
+                      <div class="order-item__text">
+                        <div class="main order-item__title">Klotho / Follistatin<br>Female Bundle</div>
+                        <div class="order-item__sku">
+                          <span class="additional-mini order-item__sku-label">Артикул:</span>
+                          <span class="additional-mini order-item__sku-value">OCB3637-73478HDLK</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="order-item__meta">
+                      <span class="additional order-item__price">5000Р</span>
+                      <div class="order-qty">
+                        <span class="additional order-qty__value">1</span>
+                      </div>
+                      <span class="additional order-item__sum">5000Р</span>
+                      <button class="order-item__remove" type="button" aria-label="Удалить">
+                        <i data-icon="close" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </article>
+
+                  <article class="order-item">
+                    <div class="order-item__main">
+                      <img class="order-item__img" src="images/pept_3.webp" alt="">
+                      <div class="order-item__text">
+                        <div class="main order-item__title">Klotho / Follistatin<br>Female Bundle</div>
+                        <div class="order-item__sku">
+                          <span class="additional-mini order-item__sku-label">Артикул:</span>
+                          <span class="additional-mini order-item__sku-value">OCB3637-73478HDLK</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="order-item__meta">
+                      <span class="additional order-item__price">775000Р</span>
+                      <div class="order-qty">
+                        <span class="additional order-qty__value">17</span>
+                      </div>
+                      <span class="additional order-item__sum">775000Р</span>
+                      <button class="order-item__remove" type="button" aria-label="Удалить">
+                        <i data-icon="close" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </article>
+
+                  <article class="order-item">
+                    <div class="order-item__main">
+                      <img class="order-item__img" src="images/pept_4.webp" alt="">
+                      <div class="order-item__text">
+                        <div class="main order-item__title">Klotho / Follistatin<br>Female Bundle</div>
+                        <div class="order-item__sku">
+                          <span class="additional-mini order-item__sku-label">Артикул:</span>
+                          <span class="additional-mini order-item__sku-value">OCB3637-73478HDLK</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="order-item__meta">
+                      <span class="additional order-item__price">5000Р</span>
+                      <div class="order-qty">
+                        <span class="additional order-qty__value">1</span>
+                      </div>
+                      <span class="additional order-item__sum">5000Р</span>
+                      <button class="order-item__remove" type="button" aria-label="Удалить">
+                        <i data-icon="close" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </article>
+                </div>
+
+                <button class="order-card__btn main" type="button">
+                  <span>Подробнее</span>
+                  <i data-icon="arrow_outward" class="order-card__btn-icon" aria-hidden="true"></i>
+                </button>
+              </article>
+            </div>
+
+            <div class="lk-bottom">
+              <div class="profile-card">
+                <h2 class="h2 profile-card__title">Личные данные</h2>
+
+                <div class="profile-form">
+                  <div class="profile-field">
+                    <span class="additional-mini profile-field__label">Ваше имя</span>
+                    <span class="main profile-field__value profile-field__value--black">Георгий Варанов</span>
+                    <button class="profile-field__edit" type="button" aria-label="Редактировать">
+                      <img src="images/edit.svg" width="20" height="20" alt="">
+                    </button>
+                  </div>
+
+                  <div class="profile-field">
+                    <span class="additional-mini profile-field__label">Email</span>
+                    <span class="main profile-field__value profile-field__value--blue">aaaaaaaaaaaa.aaaaa@mail.ru</span>
+                    <button class="profile-field__edit" type="button" aria-label="Редактировать">
+                      <img src="images/edit.svg" width="20" height="20" alt="">
+                    </button>
+                  </div>
+
+                  <div class="profile-field">
+                    <span class="additional-mini profile-field__label">Телефон</span>
+                    <span class="main profile-field__value profile-field__value--blue">+ _ _ _ - _ _ _ - _ _ - _
+                      _</span>
+                    <button class="profile-field__edit" type="button" aria-label="Редактировать">
+                      <img src="images/edit.svg" width="20" height="20" alt="">
+                    </button>
+                  </div>
+
+                  <div class="profile-field">
+                    <span class="additional-mini profile-field__label">Адрес</span>
+                    <span class="main profile-field__value profile-field__value--blue">г. Москва, ул Аааааа, д.
+                      11</span>
+                    <button class="profile-field__edit" type="button" aria-label="Редактировать">
+                      <img src="images/edit.svg" width="20" height="20" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <button class="profile-save main" type="button">
+                <span>Сохранить</span>
+                <i data-icon="order_approve" class="profile-save__icon" aria-hidden="true"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="popular">
+    <div class="container">
+      <div class="popular__inner">
+        <h2 class="h2 popular__title">Популярные пептиды</h2>
+
+        <div class="popular__shell">
+          <button class="popular__arrow popular__arrow--left" type="button" aria-label="Влево">
+            <i data-icon="keyboard_arrow_left"></i>
+          </button>
+
+          <div class="popular__viewport" id="popularViewport">
+            <div class="popular__track" id="popularTrack">
+              <article class="product-card">
+                <div class="product-card__badge product-card__badge--new">NEW</div>
+
+                <div class="product-card__media">
+                  <img class="product-card__img" src="images/pept_1.webp" alt="Peptide">
+                  <div class="additional product-card__price">5000 Р</div>
+                </div>
+
+                <div class="additional product-card__name">Klotho / Follistatin Female Bundle</div>
+
+                <div class="product-card__actions">
+                  <a class="product-card__btn product-card__btn--ghost" href="product.html">
+                    <span class="main">Узнать больше</span>
+                    <img src="images/arrow_right_1.svg" alt="">
+                  </a>
+
+                  <button class="product-card__btn product-card__btn--primary" type="button">
+                    <span class="main">Добавить в корзину</span>
+                    <img src="images/shopping.svg" alt="">
+                  </button>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__badge product-card__badge--sale">SALE</div>
+
+                <div class="product-card__media">
+                  <img class="product-card__img" src="images/pept_2.webp" alt="Peptide">
+                  <div class="additional product-card__price">5000 Р</div>
+                </div>
+
+                <div class="additional product-card__name">Klotho (a-Klotho MAB) (20mcg)</div>
+
+                <div class="product-card__actions">
+                  <a class="product-card__btn product-card__btn--ghost" href="product.html">
+                    <span class="main">Узнать больше</span>
+                    <img src="images/arrow_right_1.svg" alt="">
+                  </a>
+
+                  <button class="product-card__btn product-card__btn--primary" type="button">
+                    <span class="main">Добавить в корзину</span>
+                    <img src="images/shopping.svg" alt="">
+                  </button>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__badge product-card__badge--new">NEW</div>
+
+                <div class="product-card__media">
+                  <img class="product-card__img" src="images/pept_3.webp" alt="Peptide">
+                  <div class="additional product-card__price">5000 Р</div>
+                </div>
+
+                <div class="additional product-card__name">Klotho (a-Klotho MAB) / Follistatin (FLGR242)</div>
+
+                <div class="product-card__actions">
+                  <a class="product-card__btn product-card__btn--ghost" href="product.html">
+                    <span class="main">Узнать больше</span>
+                    <img src="images/arrow_right_1.svg" alt="">
+                  </a>
+
+                  <button class="product-card__btn product-card__btn--primary" type="button">
+                    <span class="main">Добавить в корзину</span>
+                    <img src="images/shopping.svg" alt="">
+                  </button>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__badge product-card__badge--sale">SALE</div>
+
+                <div class="product-card__media">
+                  <img class="product-card__img" src="images/pept_1.webp" alt="Peptide">
+                  <div class="additional product-card__price">5000 Р</div>
+                </div>
+
+                <div class="additional product-card__name">Klotho / Follistatin Female Bundle</div>
+
+                <div class="product-card__actions">
+                  <a class="product-card__btn product-card__btn--ghost" href="product.html">
+                    <span class="main">Узнать больше</span>
+                    <img src="images/arrow_right_1.svg" alt="">
+                  </a>
+
+                  <button class="product-card__btn product-card__btn--primary" type="button">
+                    <span class="main">Добавить в корзину</span>
+                    <img src="images/shopping.svg" alt="">
+                  </button>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__badge product-card__badge--new">NEW</div>
+
+                <div class="product-card__media">
+                  <img class="product-card__img" src="images/pept_1.webp" alt="Peptide">
+                  <div class="additional product-card__price">5000 Р</div>
+                </div>
+
+                <div class="additional product-card__name">Peptide name example long long</div>
+
+                <div class="product-card__actions">
+                  <a class="product-card__btn product-card__btn--ghost" href="product.html">
+                    <span class="main">Узнать больше</span>
+                    <img src="images/arrow_right_1.svg" alt="">
+                  </a>
+
+                  <button class="product-card__btn product-card__btn--primary" type="button">
+                    <span class="main">Добавить в корзину</span>
+                    <img src="images/shopping.svg" alt="">
+                  </button>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__badge product-card__badge--sale">SALE</div>
+
+                <div class="product-card__media">
+                  <img class="product-card__img" src="images/pept_2.webp" alt="Peptide">
+                  <div class="additional product-card__price">5000 Р</div>
+                </div>
+
+                <div class="additional product-card__name">Peptide name example</div>
+
+                <div class="product-card__actions">
+                  <a class="product-card__btn product-card__btn--ghost" href="product.html">
+                    <span class="main">Узнать больше</span>
+                    <img src="images/arrow_right_1.svg" alt="">
+                  </a>
+
+                  <button class="product-card__btn product-card__btn--primary" type="button">
+                    <span class="main">Добавить в корзину</span>
+                    <img src="images/shopping.svg" alt="">
+                  </button>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__badge product-card__badge--new">NEW</div>
+
+                <div class="product-card__media">
+                  <img class="product-card__img" src="images/pept_3.webp" alt="Peptide">
+                  <div class="additional product-card__price">5000 Р</div>
+                </div>
+
+                <div class="additional product-card__name">Peptide name example</div>
+
+                <div class="product-card__actions">
+                  <a class="product-card__btn product-card__btn--ghost" href="product.html">
+                    <span class="main">Узнать больше</span>
+                    <img src="images/arrow_right_1.svg" alt="">
+                  </a>
+
+                  <button class="product-card__btn product-card__btn--primary" type="button">
+                    <span class="main">Добавить в корзину</span>
+                    <img src="images/shopping.svg" alt="">
+                  </button>
+                </div>
+              </article>
+
+              <article class="product-card">
+                <div class="product-card__badge product-card__badge--sale">SALE</div>
+
+                <div class="product-card__media">
+                  <img class="product-card__img" src="images/pept_1.webp" alt="Peptide">
+                  <div class="additional product-card__price">5000 Р</div>
+                </div>
+
+                <div class="additional product-card__name">Peptide name example</div>
+
+                <div class="product-card__actions">
+                  <a class="product-card__btn product-card__btn--ghost" href="product.html">
+                    <span class="main">Узнать больше</span>
+                    <img src="images/arrow_right_1.svg" alt="">
+                  </a>
+
+                  <button class="product-card__btn product-card__btn--primary" type="button">
+                    <span class="main">Добавить в корзину</span>
+                    <img src="images/shopping.svg" alt="">
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <button class="popular__arrow popular__arrow--right" type="button" aria-label="Вправо">
+            <i data-icon="keyboard_arrow_right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="notes">
+    <div class="container">
+      <div class="notes__flex">
+        <article class="note-card">
+          <div class="note-card__media">
+            <img class="note-card__img" src="images/note_1.webp" alt="">
+            <span class="note-card__date additional-mini">06.12.2025г.</span>
+          </div>
+
+          <div class="note-card__content">
+            <div class="note-card_text">
+              <h3 class="note-card__title h3">Нутрицевтики укрепляют ваше здоровье</h3>
+
+              <p class="note-card__text main">
+                Вы хотите повысить свою энергию, поддержать иммунитет и выглядеть моложе? Тогда обратите внимание на
+                уникальные
+                свойства нутрицевтиков!
+              </p>
+            </div>
+            <a class="note-card__btn main" href="notes_fail.html">
+              <span>Читать</span>
+              <i data-icon="arrow_forward" class="note-card__btn-icon" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="note-card">
+          <div class="note-card__media">
+            <img class="note-card__img" src="images/note_2.webp" alt="">
+            <span class="note-card__date additional-mini">06.12.2025г.</span>
+          </div>
+
+          <div class="note-card__content">
+            <div class="note-card_text">
+              <h3 class="note-card__title h3">Ключевые преимущества употребления пептидов и аминокислот</h3>
+
+              <p class="note-card__text main">
+                Пептиды и аминокислоты играют важную роль в поддержании здоровья организма. Они участвуют в
+                различных
+                физиологических процессах, включая синтез белков, поддержание иммунной системы, рост мышц и защиту
+                клеток от окислительного стресса. Настоящая статья рассматривает ключевые преимущества употребления
+                пептидов и аминокислот
+              </p>
+            </div>
+
+            <a class="note-card__btn main" href="notes_fail.html">
+              <span>Читать</span>
+              <i data-icon="arrow_forward" class="note-card__btn-icon" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <div class="footer__col footer__col-logo">
+            <a class="footer__logo" href="index.html">
+              <img src="images/footer_logo.svg" alt="PeptX">
+            </a>
+            <div class="footer__title-logo h3">Сертификаты соответствия</div>
+            <div class="footer__text main">
+              <a class="main" href="#">№РОСС RU.NTC1.001778/25</a>
+              <a class="main" href="#">№РОСС RU.NTC1.001778/25</a>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__title h3">Каталог</div>
+            <nav class="footer__list">
+              <a class="main" href="catalog_peptid.html">Пептиды</a>
+              <a class="main" href="catalog.html">Нутрицевтики</a>
+              <a class="main" href="catalog.html">Косметика</a>
+              <a class="main" href="catalog.html">Дополнительно</a>
+            </nav>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__title h3">Информация</div>
+            <nav class="footer__list">
+              <a class="main" href="notes.html">База знаний</a>
+              <a class="main" href="notes.html">Комьюнити</a>
+              <a class="main" href="contacts.html">Контакты</a>
+              <a class="main" href="info_page.html">Доставка и оплата</a>
+              <a class="main" href="faq.html">Вопрос-ответ</a>
+              <a class="main" href="#">Сертификаты</a>
+            </nav>
+          </div>
+
+          <div class="footer__col">
+            <div class="footer__title-contacts h3">Контакты</div>
+
+            <div class="footer__contacts">
+              <a class="footer__link main" href="tel:+7564543">+7 7564543</a>
+              <a class="footer__link main" href="mailto:info@peptage.ru">info@peptage.ru</a>
+
+              <div class="footer__socials">
+                <a href="#" aria-label="Telegram">
+                  <img src="images/telega.svg" alt="">
+                </a>
+                <a href="#" aria-label="WhatsApp">
+                  <img src="images/whatsapp.svg" alt="">
+                </a>
+              </div>
+
+              <div class="footer__text main">
+                <a class="main" href="#">ООО “PeptAge”</a>
+                <a class="main" href="#">ИНН: 1111111111</a>
+                <a class="main" href="#">ОГРН:11111111111111111111</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__pay">
+            <img src="images/mir.svg" alt="Мир">
+            <img src="images/sbp.svg" alt="СБП">
+          </div>
+          <a class="footer__policy additional" href="#">Политика конфиденциальности</a>
+          <div class="footer__copy additional">2025. Все права защищены</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

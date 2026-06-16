@@ -1,0 +1,474 @@
+/* overlay */
+.auth-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .35);
+  display: none;
+  z-index: 9999;
+}
+
+.auth-overlay.is-open {
+  display: block;
+}
+
+/* modal */
+.auth-modal {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: 1px solid var(--light-blue);
+  border-radius: 8px;
+  padding: 40px;
+  width: 454px;
+  box-sizing: border-box;
+  background: var(--blue);
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  height: auto;
+  /* важно */
+  max-height: calc(100vh - 160px);
+  overflow: auto;
+}
+
+
+.auth-modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-modal__close i[data-icon] {
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  line-height: 32px;
+  color: var(--white);
+  font-variation-settings: "FILL"0, "wght"200, "GRAD"0, "opsz"32;
+}
+
+.auth-modal__title {
+  margin: 0;
+  color: var(--white);
+  text-align: center;
+}
+
+/* form */
+.auth-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.login-input {
+  position: relative;
+  border: 1px solid var(--light-blue);
+  border-radius: 6px;
+  padding: 6px 12px;
+  width: 374px;
+  height: 54px;
+  box-sizing: border-box;
+  background: var(--white);
+}
+
+.login-input__label {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  color: var(--transparent-blue);
+}
+
+.login-input__field {
+  position: absolute;
+  left: 12px;
+  bottom: 6px;
+
+  width: calc(100% - 60px);
+  border: 0;
+  outline: 0;
+  background: transparent;
+
+  color: var(--blue);
+  padding: 0;
+}
+
+/* eye */
+.login-eye {
+  position: absolute;
+  right: 12px;
+  bottom: 6px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-eye__icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--blue);
+  font-variation-settings: "FILL"0, "wght"200, "GRAD"0, "opsz"24;
+}
+
+.auth-modal__forgot {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* actions */
+.auth-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.auth-actions[hidden] {
+  display: none !important;
+}
+
+.auth-error[hidden] {
+  display: none !important;
+}
+
+.auth-btn {
+  border-radius: 8px;
+  padding: 8px 24px;
+  width: 177px;
+  height: 41px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  transition: background .8s, color .8s;
+}
+
+/* ОБЩЕЕ: никакого hover по умолчанию */
+.auth-btn--ghost {
+  color: var(--white);
+}
+
+/* ТОЛЬКО кнопка "Войти" имеет hover */
+.auth-btn--login:hover {
+  background: var(--light-blue);
+  color: var(--white);
+}
+
+/* Регистрация — БЕЗ hover */
+#open-register:hover {
+  background: transparent;
+  color: var(--white);
+}
+
+
+.auth-btn--primary {
+  background: var(--light-blue);
+  border: 0;
+  color: var(--white);
+}
+
+.auth-btn--primary:hover {
+  opacity: .8;
+}
+
+.auth-btn--ghost {
+  background: transparent;
+  border: 0;
+  color: var(--white);
+  opacity: .9;
+}
+
+.auth-btn--ghost:hover {
+  opacity: .7;
+}
+
+.auth-btn__icon {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  color: currentColor;
+  font-variation-settings: "FILL"0, "wght"200, "GRAD"0, "opsz"20;
+}
+
+/* error block */
+.auth-error {
+  border-radius: 8px;
+  padding: 16px;
+  width: 374px;
+  height: 82px;
+  box-sizing: border-box;
+  background: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.auth-error__text {
+  margin: 0;
+  color: var(--red);
+}
+
+/* error state */
+.auth-modal.is-error .login-input {
+  border-color: var(--red);
+}
+
+.auth-modal.is-error .login-input__field {
+  color: var(--red);
+}
+
+.auth-modal.is-error .login-eye__icon {
+  color: var(--red);
+}
+
+#authRetry {
+  display: flex;
+  justify-content: center;
+}
+
+/* кнопка retry — спеки из макета */
+#authRetry .auth-btn {
+  width: 374px;
+  height: 41px;
+  padding: 8px 40px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* чтобы текст не переносился */
+#authRetry .auth-btn__label {
+  white-space: nowrap;
+}
+
+/* УБИРАЕМ hover у ghost по умолчанию (регистрация) */
+.auth-btn--ghost {
+  opacity: 1;
+}
+
+.auth-btn--ghost:hover {
+  opacity: 1;
+}
+
+/* Войти: единственная кнопка с hover-заливкой */
+.auth-btn--login {
+  transition: background .8s, color .8s;
+}
+
+.auth-btn--login:hover {
+  background: var(--light-blue);
+  color: var(--white);
+}
+
+/* primary больше не нужен (если где-то остался в HTML — убери класс) */
+.auth-btn--primary,
+.auth-btn--primary:hover {
+  background: transparent;
+  opacity: 1;
+}
+
+/* overlay */
+.reg-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .35);
+  display: none;
+  z-index: 9999;
+}
+
+.reg-overlay.is-open {
+  display: block;
+}
+
+/* modal */
+.reg-modal {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid var(--light-blue);
+  border-radius: 8px;
+  padding: 40px;
+  width: 454px;
+  box-sizing: border-box;
+  background: var(--blue);
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.reg-modal__title {
+  margin: 0;
+  color: var(--white);
+  text-align: center;
+}
+
+/* error block (как в логине) */
+.auth-error {
+  border-radius: 8px;
+  padding: 16px;
+  width: 374px;
+  height: 82px;
+  box-sizing: border-box;
+  background: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.auth-error__text {
+  margin: 0;
+  color: var(--red);
+}
+
+.auth-error[hidden] {
+  display: none !important;
+}
+
+/* inputs — используй твои текущие стили login-input */
+.reg-modal .login-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* checkbox: прозрачный, галка light-blue */
+.reg-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.reg-consent__input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.reg-consent__box {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 2px solid var(--light-blue);
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  position: relative;
+  background: transparent;
+}
+
+.reg-consent__text {
+  color: var(--white);
+}
+
+/* галка light-blue, фон прозрачный */
+.reg-consent__input:checked+.reg-consent__box::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 9px;
+  border-right: 2px solid var(--light-blue);
+  border-bottom: 2px solid var(--light-blue);
+  transform: rotate(45deg);
+}
+
+/* register button (как retry 374x41, padding 8 40) */
+.reg-btn {
+  width: 374px;
+  height: 41px;
+  padding: 8px 40px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* hover для кнопки регистрации */
+.reg-btn {
+  transition: opacity .8s;
+}
+
+.reg-btn:hover {
+  opacity: .8;
+}
+
+/* error state: если есть пустое поле */
+.reg-modal.is-error .login-input {
+  border-color: var(--red);
+}
+
+.reg-modal.is-error .login-input__field {
+  color: var(--red);
+}
+
+.reg-modal.is-error .login-eye__icon {
+  color: var(--red);
+}
+
+/* form: теперь error + поля разделены gap 32px */
+.reg-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* поля: внутри gap 24px как было */
+.reg-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* чтобы hidden реально убирал блок и gap не выглядел странно */
+.auth-error[hidden] {
+  display: none !important;
+}
+
+.reg-btn{
+  background: transparent;
+  color: var(--white);
+  transition: background .8s ease, color .8s ease;
+}
+
+/* hover как у кнопки "Войти" */
+.reg-btn:hover{
+  background: var(--light-blue);
+  color: var(--white);
+}

@@ -1,0 +1,130 @@
+.catalog-top__breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--blue);
+}
+
+.catalog-top__crumb {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.catalog-top__sep {
+  color: var(--blue);
+}
+
+.catalog-top__head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.catalog-top__title {
+  font-weight: 400;
+}
+
+.lines__grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.line-card {
+  width: 380px;
+  height: 545px;
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+  background: var(--white);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.line-card__media {
+  width: 380px;
+  height: 380px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.line-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.line-card__body {
+  padding: 12px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.line-card__title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--blue);
+  text-align: center;
+}
+
+.line-card__icon {
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  line-height: 32px;
+  color: var(--blue);
+  font-variation-settings: "FILL"0, "wght"400, "GRAD"0, "opsz"32;
+}
+
+.line-card__desc {
+  margin: 0;
+  text-align: center;
+  color: var(--blue);
+  line-height: 1.4;
+}
+
+.line-card__btn {
+  width: 348px;
+  height: 41px;
+  padding: 8px 24px;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  text-decoration: none;
+  color: var(--white);
+
+  background: var(--btn-bg);
+  border: 1px solid var(--blue);
+}
+
+.line-card__btn-icon {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--white);
+  font-variation-settings: "FILL"0, "wght"200, "GRAD"0, "opsz"20;
+}
+
+.catalog-top__title{
+  text-align: center;
+}
+
+.catalog-top__head{
+  margin-bottom: 32px;
+}
+
+.catalog__peptid{
+  padding: 60px 0px;
+}
